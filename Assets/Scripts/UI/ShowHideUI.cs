@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace RPG.UI
+namespace RPG.UI.Inventories
 {
     public class ShowHideUI : MonoBehaviour
     {

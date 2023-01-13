@@ -1,8 +1,8 @@
+using RPG.Saving;
 using System.Collections;
-using GameDevTV.Saving;
 using UnityEngine;
 
-namespace InventoryExample.SceneManagement
+namespace RPG.SceneManagement
 {
     public class SavingWrapper : MonoBehaviour
     {
@@ -10,17 +10,19 @@ namespace InventoryExample.SceneManagement
         [SerializeField] KeyCode loadKey = KeyCode.L;
         [SerializeField] KeyCode deleteKey = KeyCode.Delete;
         const string defaultSaveFile = "save";
-        
-        private void Awake() 
+
+        private void Awake()
         {
             StartCoroutine(LoadLastScene());
         }
 
-        private IEnumerator LoadLastScene() {
+        private IEnumerator LoadLastScene()
+        {
             yield return GetComponent<SavingSystem>().LoadLastScene(defaultSaveFile);
         }
 
-        private void Update() {
+        private void Update()
+        {
             if (Input.GetKeyDown(saveKey))
             {
                 Save();

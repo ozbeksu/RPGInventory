@@ -1,7 +1,7 @@
-using GameDevTV.Core.UI.Dragging;
-using UnityEngine;
+using RPG.Core.UI.Dragging;
+using RPG.Inventories;
 
 namespace RPG.UI.Inventories
 {
-    public class InventoryDragItem : DragItem<Sprite> { }
+    public class InventoryDragItem : DragItem<InventoryItem> { }
 }

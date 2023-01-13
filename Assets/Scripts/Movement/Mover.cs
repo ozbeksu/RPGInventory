@@ -1,9 +1,9 @@
-﻿using InventoryExample.Core;
-using GameDevTV.Saving;
+﻿using RPG.Core;
+using RPG.Saving;
 using UnityEngine;
 using UnityEngine.AI;
 
-namespace InventoryExample.Movement
+namespace RPG.Movement
 {
     public class Mover : MonoBehaviour, IAction, ISaveable
     {
@@ -13,7 +13,8 @@ namespace InventoryExample.Movement
 
         NavMeshAgent navMeshAgent;
 
-        private void Awake() {
+        private void Awake()
+        {
             navMeshAgent = GetComponent<NavMeshAgent>();
         }
 

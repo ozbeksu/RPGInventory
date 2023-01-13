@@ -1,39 +1,50 @@
-using GameDevTV.Core.UI.Dragging;
+using RPG.Core.UI.Dragging;
+using RPG.Inventories;
 using UnityEngine;
 
 namespace RPG.UI.Inventories
 {
-    public class InventorySlotUI : MonoBehaviour, IDragContainer<Sprite>
+    public class InventorySlotUI : MonoBehaviour, IItemHolder, IDragContainer<InventoryItem>
     {
         [SerializeField] InventoryItemIcon icon = null;
 
-        public int MaxAcceptable(Sprite item)
+        int index;
+        Inventory inventory;
+
+        public void Setup(Inventory inventory, int index)
         {
-            if (GetItem() == null)
+            this.inventory = inventory;
+            this.index = index;
+            icon.SetItem(inventory.GetItemInSlot(index), inventory.GetItemCountInSlot(index));
+        }
+
+        public int MaxAcceptable(InventoryItem item)
+        {
+            if (inventory.HasSpaceFor(item))
             {
                 return int.MaxValue;
             }
             return 0;
         }
 
-        public void AddItems(Sprite item, int number)
+        public void AddItems(InventoryItem item, int count)
         {
-            icon.SetItem(item);
+            inventory.AddItemToSlot(index, item, count);
         }
 
-        public Sprite GetItem()
+        public InventoryItem GetItem()
         {
-            return icon.GetItem();
+            return inventory.GetItemInSlot(index);
         }
 
         public int GetNumber()
         {
-            return 1;
+            return inventory.GetItemCountInSlot(index);
         }
 
-        public void RemoveItems(int number)
+        public void RemoveItems(int count)
         {
-            icon.SetItem(null);
+            inventory.RemoveFromSlot(index, count);
         }
     }
 }
