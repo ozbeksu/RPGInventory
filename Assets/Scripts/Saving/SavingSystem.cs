@@ -47,6 +47,7 @@ namespace RPG.Saving
         /// </summary>
         public void Delete(string saveFile)
         {
+            print("Deleting saved data");
             File.Delete(GetPathFromSaveFile(saveFile));
         }
 
@@ -54,6 +55,7 @@ namespace RPG.Saving
 
         private void Load(string saveFile)
         {
+            print("Loding saved data");
             RestoreState(LoadFile(saveFile));
         }
 

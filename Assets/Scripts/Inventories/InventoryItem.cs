@@ -11,8 +11,8 @@ namespace RPG.Inventories
     /// In practice, you are likely to use a subclass such as `ActionItem` or
     /// `EquipableItem`.
     /// </remarks>
-    [CreateAssetMenu(menuName = ("RPGSandbox/Inventory/Item"))]
-    public class InventoryItem : ScriptableObject, ISerializationCallbackReceiver
+    [CreateAssetMenu(menuName = ("RPG/Inventory/Inventory Item"))]
+    public abstract class InventoryItem : ScriptableObject, ISerializationCallbackReceiver
     {
         // CONFIG DATA
         [Tooltip("Auto-generated UUID for saving/loading. Clear this field if you want to generate a new one.")]
@@ -48,6 +48,7 @@ namespace RPG.Inventories
             {
                 itemLookupCache = new Dictionary<string, InventoryItem>();
                 var itemList = Resources.LoadAll<InventoryItem>("");
+
                 foreach (var item in itemList)
                 {
                     if (itemLookupCache.ContainsKey(item.itemID))
@@ -61,6 +62,7 @@ namespace RPG.Inventories
             }
 
             if (itemID == null || !itemLookupCache.ContainsKey(itemID)) return null;
+
             return itemLookupCache[itemID];
         }
 
@@ -74,6 +76,7 @@ namespace RPG.Inventories
             var pickup = Instantiate(this.pickup);
             pickup.transform.position = position;
             pickup.Setup(this, count);
+
             return pickup;
         }
 

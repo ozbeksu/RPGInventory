@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 0}
+  count: 1
 --- !u!114 &730551197321418984
 MonoBehaviour:
   m_ObjectHideFlags: 0

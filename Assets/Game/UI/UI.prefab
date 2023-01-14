@@ -64,6 +64,11 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2774891212018735010, guid: b868e039a895a5f4489f8bcb8bc0778d,
+        type: 3}
+      propertyPath: m_Name
+      value: Weapon
+      objectReference: {fileID: 0}
     - target: {fileID: 4051077760707318724, guid: b868e039a895a5f4489f8bcb8bc0778d,
         type: 3}
       propertyPath: m_SizeDelta.y
@@ -77,6 +82,26 @@ PrefabInstance:
     - target: {fileID: 4416834625759539524, guid: b868e039a895a5f4489f8bcb8bc0778d,
         type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6093743109449515661, guid: b868e039a895a5f4489f8bcb8bc0778d,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6093743109449515661, guid: b868e039a895a5f4489f8bcb8bc0778d,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6093743109449515661, guid: b868e039a895a5f4489f8bcb8bc0778d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6093743109449515661, guid: b868e039a895a5f4489f8bcb8bc0778d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7064490161545735671, guid: b868e039a895a5f4489f8bcb8bc0778d,

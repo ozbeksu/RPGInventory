@@ -190,6 +190,31 @@ CapsuleCollider:
   m_Height: 1.79
   m_Direction: 1
   m_Center: {x: 0, y: 0.82, z: 0}
+--- !u!114 &2689768983214234896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4902660786131331472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20e1d091f4f29f2419fd867ff823ed43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3870165545022919424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4902660786131331472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96e8e1d583acbea4895a7acab95a3faa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventorySize: 16
 --- !u!114 &4436404749727344746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -200,6 +225,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 26934e14f9928cd449871ab74244ca12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8252644281906143941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4902660786131331472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baa093da7cdce4547b7024afb8f8fd88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &7122694563460434362
@@ -235,19 +272,6 @@ MonoBehaviour:
     hotspot: {x: 0, y: 0}
   maxNavMeshProjectionDistance: 1
   raycastRadius: 1
---- !u!114 &3870165545022919424
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4902660786131331472}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96e8e1d583acbea4895a7acab95a3faa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inventorySize: 16
 --- !u!4 &9169026001514661365 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8196697675836667564, guid: 750e3c6876a501e42b5827ec7a3d24d1,

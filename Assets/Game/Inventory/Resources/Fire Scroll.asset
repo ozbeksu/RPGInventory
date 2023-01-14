@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 761bdc7a94ead0d48aa4924ce3bd451a, type: 3}
-  m_Name: Healing Potion
+  m_Name: Fire Scroll
   m_EditorClassIdentifier: 
-  itemID: e37ef042-c554-4e11-92fb-240f932c79c3
-  displayName: Healing Potion
-  description: Heals +25 HP
-  icon: {fileID: 21300000, guid: aba0f700d91d4fc4fa8c724899ab04ab, type: 3}
-  pickup: {fileID: 1747501762757846545, guid: 3b7d7cd249334d84aa4fc86d33031cab, type: 3}
-  stackable: 1
-  _consumable: 1
+  itemID: 225be3e1-975f-41e9-bf16-0ab5065c9780
+  displayName: Magic Scroll
+  description: Fire Spell scroll
+  icon: {fileID: 21300000, guid: a1ec2c0ddc0da634b85f0f465fec2d0d, type: 3}
+  pickup: {fileID: 1747501762757846545, guid: ee8cef2f42939f34e9df24b110eee1b4, type: 3}
+  stackable: 0
+  _consumable: 0
